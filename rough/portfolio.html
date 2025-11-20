@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex - Sys Admin Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Profile (always visible on desktop, hidden on mobile) -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Alex</h1>
+        <p class="role">System Administrator & IT Specialist</p>
+      </div>
+      <img
+        class="profile-pic"
+        src="https://randomuser.me/api/portraits/men/75.jpg"
+        alt="Alex Profile Picture"
+      />
+      <div class="specialization">
+        <p><strong>Specialization:</strong></p>
+        <p>System Administration & IT Infrastructure Management</p>
+        <p><strong>Based in:</strong></p>
+        <p>San Francisco, CA</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:alex@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <button class="btn-work">Let's Work!</button>
+    </aside>
+
+    <!-- Desktop Navbar (hidden on mobile) -->
+    <nav class="nav-desktop">
+      <ul>
+        <li><a href="#intro"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navbar (hidden on desktop) -->
+    <nav class="nav-mobile">
+      <button id="mobileMenuToggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="mobileMenu" class="mobile-menu">
+        <button id="mobileMenuClose" class="close-menu" aria-label="Close Menu">&times;</button>
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction Section -->
+      <section id="intro" class="section section-intro">
+        <div class="intro-text">
+          <span class="badge">Introduction</span>
+          <h1>
+            I'm Alex<br />
+            System Administrator<br />
+            & IT Specialist.
+          </h1>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">My Projects</a>
+            <a href="alex_resume.pdf" class="btn btn-outline" download>Download CV</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number" data-target="50">0</span>+
+              <p>Systems Managed</p>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="8">0</span>+
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="40">0</span>+
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section section-services">
+        <span class="badge">Services</span>
+        <h2>Building Secure & Reliable IT Systems</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Network Administration</h3>
+            <p>Managing, configuring, and maintaining secure and stable network infrastructures.</p>
+            <small>40 projects</small>
+          </div>
+          <div class="service-card">
+            <h3>Server Management</h3>
+            <p>Expertise in Linux & Windows server setup, monitoring, and troubleshooting.</p>
+            <small>60 projects</small>
+          </div>
+          <div class="service-card">
+            <h3>Security Protocols</h3>
+            <p>Implementing firewalls, antivirus, backups & disaster recovery plans.</p>
+            <small>35 projects</small>
+          </div>
+          <div class="service-card">
+            <h3>IT Support & Maintenance</h3>
+            <p>Providing timely end-user support and hardware/software maintenance.</p>
+            <small>50 projects</small>
+          </div>
+          <div class="service-card">
+            <h3>Cloud Services Administration</h3>
+            <p>Managing cloud platforms like AWS, Azure, & Google Cloud.</p>
+            <small>25 projects</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section section-skills">
+        <span class="badge">Skills</span>
+        <h2>Technical Skills</h2>
+        <ul class="skill-list">
+          <li>Linux Server Administration</li>
+          <li>Windows Server Management</li>
+          <li>Network Security & VPN Setup</li>
+          <li>Virtualization (VMware, Hyper-V)</li>
+          <li>Cloud Technologies (AWS, Azure)</li>
+          <li>Backup & Disaster Recovery</li>
+          <li>Scripting & Automation (Bash, PowerShell)</li>
+          <li>Monitoring & Performance Tuning</li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section section-projects">
+        <span class="badge">Projects</span>
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1581091012184-9b7c1e395127?auto=format&fit=crop&w=600&q=80"
+              alt="Project 1"
+            />
+            <h3>Corporate Network Setup</h3>
+          </div>
+          <div class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+              alt="Project 2"
+            />
+            <h3>Cloud Migration Project</h3>
+          </div>
+          <div class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=600&q=80"
+              alt="Project 3"
+            />
+            <h3>Server Hardening & Security</h3>
+          </div>
+          <div class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+              alt="Project 4"
+            />
+            <h3>Backup & Disaster Recovery Plan</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section section-testimonials">
+        <span class="badge">Reviews</span>
+        <h2>Client Testimonials</h2>
+        <div class="testimonials-list">
+          <blockquote>
+            "Alex managed our company network flawlessly and increased uptime by 30%. Highly recommended!"
+            <cite>- Michael S.</cite>
+          </blockquote>
+          <blockquote>
+            "Professional, knowledgeable, and quick support. Our go-to IT specialist."
+            <cite>- Sarah W.</cite>
+          </blockquote>
+          <blockquote>
+            "Helped us migrate to the cloud smoothly. Great communication and expertise."
+            <cite>- James L.</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section section-contact">
+        <span class="badge">Contact</span>
+        <h2>Get in Touch</h2>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+          
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

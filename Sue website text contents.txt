@@ -1,7 +1,37 @@
 =============== About Me ===============
 I'm a Web Designer & Developer
 
-I'm a New York, USA-based product designer with a focus on web design, UX/UI design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.<br><br>With 07 years experience as a professional web designer, I have acquired the skills and knowledge necessary to make your project a success!
+1️⃣ Automation Python Tool
+
+Description: Developed a Python-based tool to automate repetitive system administration tasks, including log parsing, backups, and routine monitoring.
+
+Skills/Tech Used: Python, PowerShell, Windows/Linux, Git.
+
+Highlight/Learnings: Gained hands-on experience in scripting, task automation, and workflow efficiency.
+
+Optional Visuals: Screenshot or GIF showing tool output or CLI interface.
+
+CTA: [View on GitHub]
+
+2️⃣ Malware Analysis Home Lab
+
+Description: Set up a personal lab environment for safe malware analysis and reverse engineering.
+
+Skills/Tech Used: Windows VM, Linux VM, REMnux, Wireshark, Sandbox testing.
+
+Highlight/Learnings: Practiced analyzing malware behavior, network traffic monitoring, and incident response fundamentals.
+
+Optional Visuals: Screenshot of REMnux terminal, malware analysis results, or network traffic graphs.
+
+3️⃣ Docker ELK + 2VM (Windows + REMnux)
+
+Description: Built an ELK Stack using Docker to centralize logs from multiple VMs, including Windows and REMnux, for security monitoring and analysis.
+
+Skills/Tech Used: Docker, ELK Stack, Windows, REMnux, Winlogbeat, OpenEDR.
+
+Highlight/Learnings: Hands-on experience in log collection, visualization, and SOC monitoring workflows.
+
+Optional Visuals: Dashboard screenshots showing log aggregation or alert setup.
 
 =============== My Resume ===============
 .education

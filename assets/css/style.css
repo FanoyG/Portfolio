@@ -934,6 +934,196 @@ body {
 /* =========================================
    Services
 ========================================= */
+.service-container{
+   display: grid;
+   place-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap:  35px;
+   row-gap: 38px;
+}
+
+.service-card{
+   position: relative;
+   background: var(--card-bg);
+   width: 275px;
+   height: 285px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 50px;
+   border-bottom: 5px solid var(--primary-color);
+   border-radius: 10px;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.service-icon{
+   color: var(--primary-color);
+   font-size: 4.15rem;
+}
+
+.service-info h4{
+   color: var(--color-02);
+   font-size: var(--h4-font-size);
+   font-weight: var(--font-semi-bold);
+   white-space: nowrap;
+   max-width: 150px;
+   margin-top: 20px;
+   margin-bottom: 25px;
+
+}
+
+.service-info .service-see-more{
+   font-size: var(--base-font-size);
+   color: var(--color-01);
+   cursor: pointer;
+   transition: .3s;
+}
+
+.service-see-more:hover{
+   color: var(--hover-color);
+}
+
+.service-see-more i{
+   font-size: 1.15rem;
+   transition: margin-left .3s;
+}
+
+.service-see-more:hover i{
+   margin-left: 3px;
+}
+
+.service-modal-backdrop{
+   z-index: var(--z-overlay);
+   position: fixed;
+   background-color: var(--modal-backdrop-bg);
+   backdrop-filter: blur(10px);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-y: auto;
+   display: none;
+   opacity: 0;
+   transition: opacity .3s ease;
+}
+
+.service-modal-backdrop.active{
+   opacity: 1;
+   transition: opacity .5s ease;
+}
+
+
+.service-modal{
+   position: relative;
+   background: var(--color-03);
+   width: 825px;
+   height: fit-content;
+   margin: 75px 25px;
+   padding: 50px 25px 50px 45px;
+   border-radius: 15px;
+   border-bottom: 5px solid var(--primary-color);
+   overflow: hidden;
+   transform: scale(0);
+   opacity: 0;
+   transition: transform .5s, opacity .5s;
+}
+
+.service-modal.active{
+   transform: scale(1);
+   opacity: 1;
+   transition: transform .5s, opacity .5s;
+}
+
+.modal-close-btn{
+   position: absolute;
+   color: var(--color-01);
+   font-size: 1.35rem;
+   top: 0;
+   right: 0;
+   margin: 15px;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.modal-close-btn:hover{
+   color: var(--hover-color);
+}
+
+.service-modal .modal-content{
+   display: flex;
+   flex-direction: column;
+   row-gap: 25px;
+   max-height: 500px;
+   margin-top: 50px;
+   padding: 10px;
+   overflow-y: auto;
+}
+
+.modal-content::-webkit-scrollbar{
+   background: hsl(var(--hue) 25% 20%);
+   width: 5px;
+   border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+   background: var(--primary-color);
+   border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover{
+   background-color: var(--hover-color);
+}
+
+.service-modal .modal-title{
+   max-width: 600px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.service-modal .modal-title h3{
+   color: var(--color-01);
+   font-size: var(--h3-font-size);
+   font-weight: 700;
+}
+
+.service-modal .modal-title p{
+   color: var(--color-04);
+   font-size: var(--small-font-size);
+   font-weight: var(--font-regular);
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.service-modal .modal-content h4{
+   color: var(--color-02);
+   font-size: var(--h4-font-size);
+   font-weight: var(--font-semi-bold);
+   margin-bottom: 15px;
+
+}
+
+.modal-content .my-services li{
+   display: flex;
+   margin-bottom: 25px;
+}
+
+.modal-content .my-services li i{
+   color: var(--primary-color);
+   font-size: 1.4rem;
+   margin-right: 10px;
+}
+
+.modal-content .my-services li p{
+   color: var(--color-02);
+   font-size: var(--base-font-size);
+   line-height: 22px;
+}
 
 /* =========================================
    Portfolio
@@ -946,7 +1136,188 @@ body {
 /* =========================================
    Contact Me
 ========================================= */
+.contact-container{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 60px;
+}
 
+.contact-info h3{
+   color: var(--color-02);
+   font-size: var(--base-font-size);
+   font-weight: var(--medium-font-size);
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+
+.contact-detials{
+   display: flex;
+   flex-direction: column;
+   row-gap: 60px;
+   margin-bottom: 50px;
+} 
+
+.contact-item{
+   display: flex;
+   align-items: center;
+   column-gap: 25px;
+}
+
+.contact-icon{
+   color: var(--primary-color);
+   font-size: 2rem;
+   background: var(--card-bg);
+   width: 75px;
+   height: 75px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+}
+
+.contact-method{
+   display: flex;
+   flex-direction: column;
+   row-gap: 7px;
+}
+
+.contact-method span{
+   font-size: var(--tiny-font-size);
+   text-transform: uppercase;
+}
+
+.contact-method h4{
+   color: var(--color-02);
+   font-size: var(--base-font-size);
+   font-weight: var(--medium-font-size);
+}
+
+.contact-method a{
+   color: var(--primary-color);
+   transition: .3s;
+}
+
+.contact-method a:hover{
+   color: var(--hover-color);
+}
+
+.contact-method a span{
+   font-size: var(--small-font-size);
+   text-transform: none;
+}
+
+.contact-method a i{
+   font-size: var(--medium-font-size);
+}
+
+.contact-social-links{
+   width: 100%;
+   display: flex;
+   column-gap: 25px;
+}
+
+.contact-social-links li{
+   font-size: 1.75rem;
+   background: var(--card-bg);
+   width: 80px;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.contact-social-links li a{
+   color: var(--primary-color);
+   transition: .3s;
+}
+
+.contact-social-links li:hover a{
+   color: var(--hover-color);
+}
+
+.contact-form-body{
+   position: relative;
+   background: var(--card-bg);
+   width: 100%;
+   padding: 50px;
+   border-radius: 35px;
+}
+
+.contact-form-body h2{
+   color: var(--color-02);
+   font-size: var(--h2-font-size);
+   font-weight: var(--font-bold);
+   text-transform: uppercase;
+   margin-bottom: 30px;
+}
+
+.contact-form-body h2 span{
+   color: var(--primary-color);
+}
+
+.contact-form-body p{
+   font-size: var(--tiny-font-size);
+   margin-bottom: 45px;
+}
+
+.contact-form-body form{
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+}
+
+.contact-form-body form .input-group input,
+.contact-form-body form .input-group textarea{
+   color: var(--color-02);
+   font-size: var(--small-font-size);
+   background: hsl(var(--hue) 54% 74% / .1);
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 17px 20px;
+   border-radius: 10px;
+}
+
+.contact-form-body form .input-group textarea{
+   height: 185px;
+   resize: none;
+}
+
+.contact-form-body form .send-message{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.contact-form-body .input-group button{
+   font-size: var(--small-font-size);
+   font-weight: var(--font-medium);
+   width: 200px;
+   padding: 16px 30px;
+   margin-top: 10px;
+   transform: .3s;
+}
+
+.contact-form-alert{
+   cursor: pointer;
+}
+
+.contact-form-alert span{
+   color: var(--color-02);
+   font-size: var(--tiny-font-size);
+   font-weight: var(--font-regular);
+
+}
+
+.contact-form-alert i{
+   color: var(--primary-color);
+   font-size: 1.25rem;
+}
 /* =========================================
    Footer
 ========================================= */

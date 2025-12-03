@@ -93,7 +93,7 @@
 
 /* ======= Light theme ======= */
 .light-theme {
-      /* ======= Changeable colors for dark/light themes ======= */
+   /* ======= Changeable colors for dark/light themes ======= */
    --color-01: hsl(var(--hue) 26% 12%);
    /* primary to dark */
    --color-02: hsl(var(--hue) 26% 12%);
@@ -119,7 +119,7 @@
    --scrollbar-thumb: hsl(var(--hue) 9% 25%);
    --scrollbar-thumb-hover: hsl(var(--hue) 9% 17%);
 
-   .bottom-nav .menu-hide-btn{
+   .bottom-nav .menu-hide-btn {
       box-shadow: 0 2px 4px hsl(0, 0%, 1%, .25);
    }
 
@@ -127,28 +127,28 @@
    .skill-card,
    .service-card,
    .portfolio-card,
-   .contact-form-body{
-      box-shadow: 0 2px 8px hsl(0, 0%, 1%, .1);  
+   .contact-form-body {
+      box-shadow: 0 2px 8px hsl(0, 0%, 1%, .1);
    }
 
    .contact-icon,
-   .contact-social-links li{
+   .contact-social-links li {
       box-shadow: 0 2px 4px hsl(0, 0%, 1%, .1);
    }
 
-   .sue-footer .copy-right{
+   .sue-footer .copy-right {
       color: hsl(var(--hue) 26% 30%);
    }
 
-   .sue-footer .copy-right a{
+   .sue-footer .copy-right a {
       color: hsl(var(--hue) 26% 30%);
    }
 
-   .sue-footer .copy-right a:hover{
+   .sue-footer .copy-right a:hover {
       color: hsl(var(--hue) 0% 0%);
    }
 
-   .top-top-btn{
+   .top-top-btn {
       background: hsl(var(--hue) 26% 12% / .2);
    }
 }
@@ -259,7 +259,7 @@ body {
 
 /* ========== Customized cursor ========== */
 
-.cursor{
+.cursor {
    z-index: var(--z-max);
    position: fixed;
    /* top: 50%;
@@ -267,7 +267,7 @@ body {
    pointer-events: none;
 }
 
-.cursor-dot{
+.cursor-dot {
    position: absolute;
    background: var(--primary-color);
    width: 5px;
@@ -278,7 +278,7 @@ body {
    transition-duration: .03s, .03s, .3s, .3s;
 }
 
-.cursor-dot.large{
+.cursor-dot.large {
    background: hsl(var(--hue) var(--sat) var(--light) / .35);
    width: 75px;
    height: 75px;
@@ -286,7 +286,7 @@ body {
    transition-duration: .03s, .03s, .3s, .3s;
 }
 
-.cursor-circle{
+.cursor-circle {
    position: absolute;
    border: 2px solid var(--primary-color);
    width: 30px;
@@ -299,7 +299,7 @@ body {
 }
 
 /* ========== To top button with scroll indicator bar ========== */
-.top-top-btn{
+.top-top-btn {
    z-index: var(--z-fixed);
    position: fixed;
    background: hsl(var(--hue) 54% 74% / .2);
@@ -311,20 +311,20 @@ body {
    transition: all .3s ease;
 }
 
-.top-top-btn.active{
+.top-top-btn.active {
    right: 30px;
 }
 
-.top-top-btn a{
+.top-top-btn a {
    color: var(--color-01);
    transition: .3s;
 }
 
-.top-top-btn a:hover{
+.top-top-btn a:hover {
    color: var(--hover-color);
 }
 
-.top-top-btn a span{
+.top-top-btn a span {
    position: absolute;
    left: 0;
    bottom: 155px;
@@ -335,7 +335,7 @@ body {
    white-space: nowrap;
 }
 
-.top-top-btn .scroll-indicator-bar{
+.top-top-btn .scroll-indicator-bar {
    position: absolute;
    background: var(--color-01);
    width: 2px;
@@ -467,13 +467,13 @@ body {
 } */
 
 .theme-btn.active-sun-icon .moon-icon,
-.theme-btn .sun-icon{
+.theme-btn .sun-icon {
    opacity: 1;
    transition: .3s;
 }
 
 .theme-btn.active-sun-icon .sun-icon,
-.theme-btn .moon-icon{
+.theme-btn .moon-icon {
    opacity: 0;
    transition: .3s;
 }
@@ -598,7 +598,7 @@ body {
 
 }
 
-.menu-hide-btn.active{
+.menu-hide-btn.active {
    opacity: 1;
    pointer-events: all;
 }
@@ -638,7 +638,7 @@ body {
    animation-delay: 1s;
 }
 
-.menu-show-btn.active{
+.menu-show-btn.active {
    bottom: 50px;
    opacity: 1;
    transition: .5s ease, .3s ease;
@@ -1342,6 +1342,193 @@ body {
    Portfolio
 ========================================= */
 
+.portfolio-tabs {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 15px;
+   margin-bottom: 85px;
+}
+
+.portfolio-tabs .tab-btn {
+   color: var(--color-01);
+   font-size: var(--medium-font-size);
+   font-weight: var(--font-medium);
+   padding: 12px 0;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.portfolio-tabs .tab-btn:hover {
+   color: var(--hover-color);
+}
+
+.portfolio-tabs .tab-btn.active {
+   color: var(--dark-color);
+   background: var(--primary-color);
+   padding: 12px 25px;
+}
+
+.portfolio-tabs .tab-btn.active:hover {
+   color: var(--white-color);
+   background: var(--hover-color);
+}
+
+.portfolio-container {
+   display: grid;
+   place-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 50px;
+   row-gap: 55px;
+}
+
+.portfolio-container .card-with-modal {
+   display: block;
+}
+
+.portfolio-container .card-with-modal.hidden {
+   display: none;
+}
+
+
+
+.portfolio-card {
+   position: relative;
+   background: var(--card-bg);
+   width: 350px;
+   border-radius: 10px;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.portfolio-card .card-img {
+   width: 100%;
+}
+
+.portfolio-card .card-img img {
+   width: 100%;
+}
+
+.portfolio-card .card-info {
+   position: relative;
+   padding: 10px 15px 20px 20px;
+}
+
+.portfolio-card .card-info span {
+   color: var(--color-04);
+   font-size: var(--tiny-font-size);
+   font-weight: var(--font-regular);
+   text-transform: uppercase;
+}
+
+.portfolio-card .card-info h4 {
+   color: var(--color-02);
+   font-size: var(--medium-font-size);
+   font-weight: var(--font-medium);
+   margin-top: 5px;
+}
+
+.portfolio-card .card-info i {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   color: var(--primary-color);
+   font-size: 1.7rem;
+   margin: 15px;
+   transform: scale(0);
+   transition: .3s;
+}
+
+.portfolio-card:hover .card-info i {
+   transform: scale(1);
+}
+
+.portfolio-modal-backdrop{
+   z-index: var(--z-overlay);
+   position: fixed;
+   background: var(--modal-backdrop-bg);
+   backdrop-filter: blur(10px);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   overflow-y: auto;
+   display: none;
+   opacity: 0;
+   transition: opacity .3s ease;
+}
+
+.portfolio-modal-backdrop.active{
+   opacity: 1;
+   transition: opacity .5s ease;
+
+}
+
+.portfolio-modal-backdrop::-webkit-scrollbar{
+   background: hsl(var(--hue) 25% 20%);
+   width: 8px;
+   border-radius: 5px;
+}
+
+.portfolio-modal-backdrop::-webkit-scrollbar-thumb{
+   background: var(--primary-color);
+   border-radius: 5px;
+}
+
+.portfolio-modal-backdrop::-webkit-scrollbar-thumb:hover{
+   background: var(--hover-color);
+}
+
+.portfolio-modal{
+   position: relative;
+   background: var(--color-03);
+   max-width: 900px;
+   height: fit-content;
+   margin: 75px 25px;
+   padding: 50px 45px;
+   border-radius: 15px;
+   transform: scale(0);
+   opacity: 0;
+}
+
+.portfolio-modal.active{
+   transform: scale(1);
+   opacity: 1;
+   transition: transform .5s opacity .5s;
+}
+
+.portfolio-modal .modal-content{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   row-gap: 25px;
+}
+
+.portfolio-modal .modal-img{
+   width: 100%;
+}
+
+.portfolio-modal .modal-img img{
+   width: 100%;
+   border-radius: 10px;
+}
+
+.portfolio-modal .modal-content .modal-title{
+   color: var(--color-02);
+   font-size: var(--h4-font-size);
+   font-weight: var(--font-semi-bold);
+}
+
+.portfolio-modal .modal-content .description{
+   color: var(--color-04);
+   font-size: var(--base-font-size);
+   font-weight: var(--font-regular);
+}
 /* =========================================
    Testimonials
 ========================================= */

@@ -1,0 +1,241 @@
+=============== About Me ===============
+I'm a Sys Admin & SOC Analyst
+
+I’m an India-based cybersecurity professional focused on defending systems, investigating threats, and building automation for faster response and stronger security.<br><br>With practical experience in system administration, alert investigation, malware analysis, and security labs, I’ve solved numerous real-world SOC and detection challenges on platforms like Let’sDefend — including documenting clean and repeatable solutions to complex attack scenarios.
+
+Defense is not luck — it’s strategy, automation, and speed.
+
+---------------- Education ----------------
+
+Bachelor of Computer Applications — Manipal University Jaipur
+2022 — Paused after 1st Semester (6.3 CGPA)
+
+High School — B.B Collegiate
+2020 – 2022 — 6.5 CGPA
+pgsql
+Copy code
+---------------- Experience ----------------
+
+Senior Bookkeeper — Luxmi Agency
+Feb 2023 – Jan 2025
+Contributed to financial operations, reconciliations, documentation, and digital process improvements.
+
+• Improved operational efficiency by 60% through optimized verification workflow
+• Reduced reporting delays by 30% by streamlining reconciliation and reviews
+• Standardized documentation & mentored junior staff
+• Built analytical thinking and investigation mindset aligned with SOC workflows
+
+Data Entry Clerk — Luxmi Agency
+Jul 2022 – Jan 2023
+Managed high-volume financial records with accuracy and reporting consistency.
+
+• Increased validation accuracy by 40% via digital voucher verification
+• Strengthened pattern recognition & problem-solving skills
+sql
+Copy code
+---------------- Skills ----------------
+
+🖥️ System Administration
+• Windows & Linux Administration
+• Networking Fundamentals
+• Git & GitHub
+• AWS Cloud (Core Services)
+• Automation (Python)
+• System Monitoring & Logs
+• Troubleshooting & Optimization
+
+🛡️ SOC & Cybersecurity
+• Threat Detection & Analysis
+• Alert Investigation
+• Malware Analysis (Static & Dynamic)
+• ELK Stack / SIEM
+• Wireshark Packet Analysis
+• Incident Response Workflow
+• Cybersecurity Tools & Labs (Let’sDefend, Splunk simulations)
+
+=============== Projects ===============
+End-to-End SOC Investigation & Detection Engineering Lab
+
+Status: Completed + In Progress Enhancements
+Stack: VirtualBox, Windows VM, FLARE-VM, REMnux, Sysmon, ELK Stack (Docker), Sigma Rules, Wireshark, Python
+
+Overview
+
+Designed a real-world SOC investigation environment to analyze malware, extract IOCs, and build automated detection workflows using Sysmon logs and SIEM monitoring.
+This project demonstrates the complete incident response lifecycle: Analyze → Detect → Visualize → Automate
+
+Phase 1 — Malware Analysis & Threat Investigation
+
+Goal: Understand malware behavior and identify Indicators of Compromise (IOCs)
+
+What I Did
+• Configured isolated malware analysis lab (Windows + FLARE-VM + REMnux)
+• Performed static & dynamic analysis on ransomware and trojan samples
+• Investigated persistence, registry changes, file operations & C2 communication
+• Captured IOCs using system logs, Process Monitor & Wireshark
+• Created a structured incident investigation report
+
+Outcome
+• Strong understanding of malware lifecycle & forensic evidence
+• IOC dataset later used for detection rule engineering
+
+🔗 Lab Connectivity & Environment Integration
+
+Configured VirtualBox internal networking to forward Sysmon logs & artifacts from the analysis VM to the ELK host machine.
+Enabled seamless end-to-end visibility from malware analysis → SIEM detection → automation pipeline.
+
+Phase 2 — ELK-Based Detection & Monitoring Pipeline
+
+Goal: Build SIEM visibility and convert malware behavior into real detections
+
+What I Implemented
+• Deployed ELK Stack using Docker on host machine
+• Forwarded Sysmon logs from malware VM
+• Built dashboards for correlation & event visualization
+• Created Sigma-rule detections based on IOC patterns
+• Designed Python automation for triage & IOC enrichment
+
+Outcome
+• Real-time detection of malicious activities
+• Faster investigation through automated decision support
+
+Phase 3 — In-Progress Enhancements
+
+• Integrating OpenEDR for deeper telemetry
+• Developing automated response actions
+• Expanding Sigma rule library with new samples
+
+Skills Demonstrated
+
+✔ Malware Analysis & Threat Research
+✔ SOC Investigation & Incident Response
+✔ SIEM Engineering & Detection Development
+✔ Python Automation
+✔ Log Analysis & Packet Forensics
+
+Upcoming Projects
+
+• SysAdmin Automation Tool (Python)
+=================== Python Automation Journey — Project Overview =============================
+
+Status: Completed (Phase 1) + Ongoing Expansions
+Stack: Python 3, psutil, subprocess, Paramiko, Requests, Boto3, Scheduling Tools
+
+Overview
+
+A practical project focused on learning automation by solving real system, network, and cloud problems with Python.
+Each script replaces manual tasks with clean, reusable automation.
+
+Core Features Completed
+
+• System information & health status automation
+• File operations (cleanup, organization, backups)
+• Scheduled tasks & basic monitoring scripts
+• Directory, logs, and disk audit tools
+• CLI tools with Rich UI for better usability
+
+In-Progress Additions
+
+• Network automation (SSH runner, port scanning, uptime checks)
+• Cloud automation (AWS EC2 & S3 tools using Boto3)
+• Security-focused scripts (log alerts, integrity checks)
+
+Skills Demonstrated
+
+✔ Python scripting & automation
+✔ System administration fundamentals
+✔ Network & cloud API integration
+✔ CLI tool design (Rich, Typer)
+✔ Error handling & reusable code structure
+
+Future Enhancements
+
+• Central configuration files
+• Logging & debugging improvements
+• Combined multi-tool automation CLI
+• Optional web dashboard for monitoring
+
+• AWS Cloud CLI Automation (Boto3 + Rich UI)
+
+=============== Services ===============
+🔵 SOC & Threat Analysis Services
+
+I help identify, investigate, and understand security threats using real Blue Team techniques.
+
+Malware Analysis
+
+What I Provide
+
+Static & dynamic malware investigation
+
+IOC extraction (hashes, IPs, domains, files, registry keys)
+
+Network traffic analysis (C2, DNS, HTTP)
+
+Behavior mapping & forensic evidence
+
+Clear, actionable malware reports
+
+Alert & Log Investigation
+
+What I Provide
+
+Sysmon & Windows Event Log analysis
+
+Suspicious process & registry investigations
+
+Brute force, phishing, and web attack detection
+
+Event correlation & findings report
+
+Basic detection rule recommendations
+
+🟩 System Administration (Windows & Linux)
+
+I help individuals and small teams troubleshoot, secure, and optimize their systems.
+
+Windows Support
+
+What I Provide
+
+Permissions, users, and group troubleshooting
+
+Process, services, and startup debugging
+
+Event logs & performance optimization
+
+Firewall configuration & security basics
+
+VM setup and environment preparation
+
+Linux Support
+
+What I Provide
+
+File system, permissions, and user management
+
+Service/daemon troubleshooting
+
+Network configuration & firewall setup
+
+System logs & monitoring assistance
+
+Package, update, and software setup
+
+🟣 Support & Guidance (Beginner Friendly)
+
+Perfect for students and new cybersecurity learners.
+
+Learning Support
+
+What I Provide
+
+Step-by-step SOC guidance
+
+Help with labs (ELK, Sysmon, malware analysis)
+
+Concept clarity (MITRE, Kill Chain, SIEM basics)
+
+Challenge walkthroughs & troubleshooting
+
+Study roadmap and structured learning path
